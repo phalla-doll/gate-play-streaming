@@ -247,6 +247,8 @@ export default function Page() {
             { title: 'Final Destination Bloodlines', progress: 30, time: '00:34:18', total: '01:42:00', img: 'dest' },
             { title: 'Weapons', progress: 60, time: '00:52:41', total: '01:50:00', img: 'weap' },
             { title: 'Meet, Greet & Bye', progress: 15, time: '00:17:26', total: '01:38:00', img: 'meet' },
+            { title: 'The Last of Us', progress: 80, time: '00:45:00', total: '00:55:00', img: 'tlou' },
+            { title: 'Dune: Part Two', progress: 10, time: '00:15:00', total: '02:46:00', img: 'dune' },
           ].map((item, i) => (
             <div key={i} className="min-w-[280px] md:min-w-[320px] group cursor-pointer">
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-3 border border-white/5">
@@ -293,6 +295,8 @@ export default function Page() {
             { title: 'Roofman', year: '2025', genre: 'Comedy/Drama', duration: '2h 6m', rating: 5, tag: 'TV-MA', img: 'roof' },
             { title: 'Nobody 2', year: '2025', genre: 'Action/Thriller', duration: '1h 29m', rating: 5, tag: 'R', img: 'nobody' },
             { title: 'Interstellar', year: '2014', genre: 'Sci-fi/Adventure', duration: '2h 49m', rating: 5, tag: 'PG-13', img: 'inter' },
+            { title: 'Oppenheimer', year: '2023', genre: 'Drama/History', duration: '3h', rating: 5, tag: 'R', img: 'oppen' },
+            { title: 'Poor Things', year: '2023', genre: 'Comedy/Drama', duration: '2h 21m', rating: 4, tag: 'R', img: 'poor' },
           ].map((item, i) => (
             <div key={i} className="min-w-[280px] md:min-w-[320px] group cursor-pointer">
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-3 border border-white/5 group-hover:border-white/20 transition-colors">
@@ -353,6 +357,8 @@ export default function Page() {
             { title: 'Midnight Corridor', year: '2015', genre: 'Psychological Thriller', duration: '2h 30m', rating: 5, tag: 'R', img: 'mid' },
             { title: 'The Conjuring', year: '2013', genre: 'Sci-fi/Action', duration: '2h 2m', rating: 5, tag: 'R', img: 'conj' },
             { title: 'Stranger Things', year: '2016', genre: 'Horror', duration: '', rating: 5, tag: 'R', img: 'stranger' },
+            { title: 'Dark Matter', year: '2024', genre: 'Sci-fi/Thriller', duration: '1h 0m', rating: 4, tag: 'TV-MA', img: 'dark' },
+            { title: 'Severance', year: '2022', genre: 'Mystery/Thriller', duration: '55m', rating: 5, tag: 'TV-MA', img: 'sev' },
           ].map((item, i) => (
             <div key={i} className="min-w-[280px] md:min-w-[320px] group cursor-pointer">
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-3 border border-white/5 group-hover:border-white/20 transition-colors">
