@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'motion/react';
 import { Search, Play, Plus, Star, Check, ChevronLeft, ChevronRight, PlayCircle, Sparkles, Globe, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -29,7 +32,13 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-[90vh] w-full flex items-center">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="relative h-[90vh] w-full flex items-center"
+      >
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://picsum.photos/seed/scifi-movie/1920/1080" 
@@ -84,10 +93,16 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Featured Today */}
-      <section className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto"
+      >
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">Featured Today</h2>
           <div className="flex space-x-2">
@@ -139,10 +154,16 @@ export default function Page() {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* Value Proposition */}
-      <section className="px-6 md:px-12 py-20 bg-[#161616] border-y border-white/5">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-12 py-20 bg-[#161616] border-y border-white/5"
+      >
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -199,10 +220,16 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Continue Watching */}
-      <section className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto"
+      >
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">Continue Watching</h2>
           <div className="flex space-x-2">
@@ -239,10 +266,16 @@ export default function Page() {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* Editor's picks */}
-      <section className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto"
+      >
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">Editor's picks for this week</h2>
           <div className="flex space-x-2">
@@ -293,10 +326,16 @@ export default function Page() {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* Originals */}
-      <section className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-12 py-8 max-w-[1400px] mx-auto"
+      >
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">Originals by GatePlay</h2>
           <div className="flex space-x-2">
@@ -347,8 +386,14 @@ export default function Page() {
             </div>
           ))}
         </div>
-      </section>
-      <section className="px-6 md:px-16 py-24 bg-gradient-to-b from-[#111111] to-[#0a0a0a]">
+      </motion.section>
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-16 py-24 bg-gradient-to-b from-[#111111] to-[#0a0a0a]"
+      >
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Open the Gate. Choose<br/>Your Experience.</h2>
           <p className="text-gray-400 text-lg">
@@ -421,10 +466,16 @@ export default function Page() {
             </button>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* App Promo */}
-      <section className="px-6 md:px-12 py-20 max-w-[1400px] mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="px-6 md:px-12 py-20 max-w-[1400px] mx-auto"
+      >
         <div className="bg-gradient-to-r from-[#161616] to-[#0a0a0a] rounded-[2rem] border border-white/5 overflow-hidden flex flex-col md:flex-row items-center relative">
           <div className="w-full md:w-1/2 p-10 md:p-16 z-10">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
@@ -451,7 +502,7 @@ export default function Page() {
              </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <footer className="px-6 md:px-12 pt-20 pb-10 border-t border-white/10 bg-[#0a0a0a] relative overflow-hidden">
