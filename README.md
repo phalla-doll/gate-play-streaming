@@ -1,3 +1,5 @@
+![Screenshot Preview](https://github.com/phalla-doll/gate-play-streaming/blob/main/public/SCR-20260304-jfhn-2.jpeg)
+
 # GatePlay Streaming
 
 A premium, cinematic landing page for a curated streaming service. GatePlay focuses on intentional discovery, handpicked weekly selections, and global perspectives, moving away from algorithm-driven chaos.
